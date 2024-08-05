@@ -1,0 +1,22 @@
+package main
+import "fmt"
+
+type person struct{
+    Name string
+    Age int
+    City string
+}
+
+func main() {
+   p1:=person{Name:"rohan",Age: 30 ,City:"khammam"}
+   
+   fmt.Println("Name:",p1.Name)
+   fmt.Println("Age:",p1.Age)
+   fmt.Println("City:",p1.City)
+   
+   p1.Age=21
+   p1.Name="Likhith chowdary"
+   p1.City="Bandipalem"
+   fmt.Printf("Updated Age: %d\nupdated Name: %s \nupdated city: %s",p1.Age,p1.Name,p1.City)
+   
+}
