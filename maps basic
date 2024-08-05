@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+    var mymap = make(map[string]int)
+
+    // Add elements to the map created with make
+    mymap["shiva"] = 29
+    mymap["rama"] = 33
+    mymap["krishna"] = 40
+
+    // Direct initialization using a map literal
+    mymapLiteral := map[string]int{
+        "shiva":  29,
+        "rama":   33,
+        "krishna": 40,
+    }
+
+    fmt.Println("mymap:", mymap)
+    fmt.Println("mymapLiteral:", mymapLiteral)
+}
